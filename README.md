@@ -17,3 +17,5 @@ The project is available for users at [MD Web Technology](https://money.mdbytes.
 Ongoing development includes separation of the calculators themselves into reusable JavaScript utilities.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Updated: 2022-12-12
