@@ -1,12 +1,20 @@
 import React from "react";
-import Head from "next/head";
+import Helmet from "react-helmet";
 
 const Seo = ({ title, description, image, article }) => {
   return (
     <>
-      <Head>
+      <Helmet>
         <title>{title}</title>
-      </Head>
+        {description ? (
+          <meta name="description" content={description} />
+        ) : (
+          <meta
+            name="description"
+            content="MD Web Technologies, where we build high performance websites and web applications to meet your goals."
+          />
+        )}
+      </Helmet>
     </>
   );
 };

@@ -1,0 +1,202 @@
+/*
+
+Styling for Contact
+
+*/
+
+@use 'typography'as *;
+
+#contact {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #f2f2f2;
+}
+
+#contact>div.contact-container.container {}
+
+#contact-header {
+    text-align: center;
+
+}
+
+#contact-header p {
+    font-size: 1.2rem;
+    color: $primary;
+    font-weight: 600;
+}
+
+.contact-container {
+
+
+    .row {
+        width: 100%;
+
+    }
+}
+
+.google-map {
+    flex: 50%;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#map img {
+    max-width: 100%;
+}
+
+#contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.get-started {
+    background-color: #f2f2f2;
+
+    .display-3 {
+        color: $primary;
+    }
+
+    div>div>p {
+        color: $white;
+    }
+
+    // Background and dimensions for the primary content
+    div>div.row.text-white {
+        padding-bottom: 3rem;
+        background: linear-gradient(180deg,
+                rgba($white, 0.3) 0%,
+                rgba($white, 0.6) 35%,
+                rgba($white, 0.8) 60%,
+                rgba($white, 1) 100%);
+        border-radius: $borderRadius;
+
+        .display-3--title {
+            color: $white !important;
+        }
+
+        @media (max-width: 768px) {
+            width: 95%;
+            margin: 0 auto;
+            background: linear-gradient(180deg,
+                    rgba($white, 0.5) 0%,
+                    rgba($white, 0.6) 35%,
+                    rgba($white, 0.8) 60%,
+                    rgba($white, 1) 100%);
+        }
+    }
+
+    .cta-info {
+        padding: 3rem;
+        margin: 4rem 0;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        h3 {
+            font-weight: 700;
+            color: $primary;
+        }
+
+        p.lh-lg {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        &__list {
+            position: relative;
+            list-style-type: none;
+            display: block;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+            margin-left: 0rem;
+            margin-bottom: 0.7rem;
+
+            li {
+                font-size: 1.2rem;
+
+                margin-bottom: 1rem;
+
+                &::marker {
+                    display: none;
+                }
+
+                i {
+                    color: $primary;
+                    font-weight: 800;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    #form {
+        margin-top: 4rem;
+        padding: 3rem;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0rem;
+        }
+
+        // #submit-button {
+        //     border: none;
+        //     color: $white;
+
+        //     @include media-breakpoint-down(lg) {
+        //         display: block;
+        //         margin: 3rem auto;
+        //     }
+
+        //     a {
+        //         color: $white;
+        //         text-decoration: none;
+        //         text-transform: capitalize;
+        //     }
+        // }
+    }
+
+    .contact-form {
+        flex: 50%;
+        padding: 0 0 2em 0;
+
+        @include media-breakpoint-down(lg) {
+            flex: 80%;
+        }
+
+        h3 {
+            font-weight: 700;
+            color: $primary;
+
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+            }
+        }
+    }
+
+    #comments {
+        height: 8em;
+    }
+
+    #math_answer {
+        width: 100px;
+    }
+
+    #submit {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        visibility: hidden;
+    }
+}

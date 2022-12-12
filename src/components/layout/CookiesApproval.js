@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import { NavLink } from "react-router-dom";
 
 const CookiesApproval = () => {
   const [cookiesApproved, setCookiesApproved] = useState(false);
@@ -29,13 +29,13 @@ const CookiesApproval = () => {
         We use cookies to ensure you have the best browsing experience on our
         website. By using our site, you acknowledge that you have read and
         understood our
-        <Link href="/privacy" className="cookie-link">
+        <NavLink to="/calculator/privacy" className="cookie-link">
           Privacy Policy
-        </Link>{" "}
+        </NavLink>{" "}
         and
-        <Link href="/terms" className="cookie-link">
+        <NavLink to="/calculator/terms" className="cookie-link">
           Universal Terms of Service.
-        </Link>
+        </NavLink>
       </p>
       {!cookiesApproved ? (
         <button onClick={() => cookiesApproval()}>Proceed to Site</button>

@@ -1,15 +1,17 @@
 import React from "react";
 import NavBar from "./NavBar";
-import Navbar from "./NavbarDD";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Navbar />
+    <div
+      className="container-fluid"
+      style={{ paddingLeft: 0, paddingRight: 0, paddingTop: "50px" }}
+    >
+      <NavBar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 
