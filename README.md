@@ -20,4 +20,6 @@ Ongoing development includes separation of the calculators themselves into reusa
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Please read the accompanying LICENSE document before using or relying upon the software in this repository.
+
 Updated: 2022-12-12
