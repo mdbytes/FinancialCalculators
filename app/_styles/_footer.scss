@@ -1,0 +1,20 @@
+@use 'typography' as *;
+
+footer {
+  font-size: 1rem;
+
+  padding: 1rem;
+  background-color: $bg-dark;
+  color: #fff;
+  @include center-content;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  p {
+    font-size: 1rem;
+    margin: 0;
+  }
+}

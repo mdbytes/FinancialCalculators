@@ -1,0 +1,132 @@
+@use 'typography' as *;
+
+.calculators {
+  padding-top: 5rem;
+
+  i {
+  }
+}
+
+.calculator-intro {
+  min-height: 90vh;
+  padding: 0;
+
+  @include media-breakpoint-down(md) {
+  }
+
+  .titles .col-lg-5 {
+    @include center-content;
+  }
+
+  .home-content .col-lg-7 {
+    min-height: 60vh;
+    @include center-content;
+    flex-direction: column;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 0;
+      padding-top: 10vh;
+    }
+  }
+
+  .home-content {
+    @include media-breakpoint-down(xl) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .home-button {
+    @include center-content;
+
+    a {
+      font-size: 1.25rem;
+    }
+  }
+
+  h1 {
+    color: $logo-color;
+    font-size: 4rem;
+  }
+
+  h2 {
+    color: $logo-color;
+    font-size: 2rem;
+  }
+
+  picture {
+    @include center-content;
+    margin-bottom: 3rem;
+
+    img {
+      transition: none;
+
+      &:hover {
+        animation: none;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .fa-ul {
+    @include media-breakpoint-down(md) {
+      max-width: 70%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
+  li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      line-height: 1.5rem;
+    }
+
+    i {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: 1.5rem;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+
+      i {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.calculators-content {
+  padding: 2rem 0;
+
+  .calculator-excerpt {
+    h3 {
+      color: $logo-color;
+    }
+
+    padding: 2rem 0;
+  }
+}

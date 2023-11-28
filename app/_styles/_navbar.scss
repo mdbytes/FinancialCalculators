@@ -1,0 +1,110 @@
+@use 'typography' as *;
+
+nav {
+  min-height: 5vh;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+@include media-breakpoint-down(lg) {
+  span.text-success {
+    display: none !important;
+  }
+}
+
+.dropdown-item {
+  color: $gray-800;
+
+  &:hover {
+    color: $gray-800;
+  }
+}
+
+button.dropdown-toggle {
+  background: transparent;
+  border: none;
+}
+
+#back-to-top {
+  position: absolute;
+  position: fixed;
+  bottom: 1rem;
+  right: 25px;
+}
+
+#back-to-top button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#back-to-top button i {
+  font-size: 2rem;
+  color: #009900;
+}
+
+#cookie-disclosure {
+  display: none;
+
+  padding: 1rem 0;
+  width: 90%;
+  max-width: 40rem;
+  background-color: #d9d9d9;
+  color: black;
+  position: absolute;
+  position: fixed;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999999999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: $borderRadius;
+
+  .cookie-link {
+    border: none;
+    color: $link-color !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    border-bottom: 1px solid $link-color !important;
+    background: none;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+}
+
+#cookie-disclosure p {
+  width: 80%;
+}
+
+#cookie-disclosure button {
+  background-color: #009900;
+  color: white;
+  font-weight: 800;
+
+  width: 15rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: $borderRadius;
+}
+
+@media (max-width: 992px) {
+  #cookie-disclosure {
+    p {
+      font-size: 0.8rem;
+    }
+
+    position: absolute;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -16,10 +16,6 @@ For the developer, in addition to the JavaScript code for financial calculations
 
 The project is available for users at [MD Web Technology](https://money.mdbytes.us). Please review the privacy policy as well as the terms and conditions prior to use.
 
-Ongoing development includes separation of the calculators themselves into reusable JavaScript utilities.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 Please read the accompanying LICENSE document before using or relying upon the software in this repository.
 
-Updated: 2022-12-12
+Updated: 2023-11-28
